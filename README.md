@@ -8,47 +8,7 @@ The checkout form for this daily UI is similar to [our last form](/react-daily-u
 -   Stateless Functional Components
 -   Importing an external library and using it in our code
 
-## Table of Contents
-
-<!-- toc -->
-
-<!-- tocstop -->
-
-<div class="newsletter-cta">
-  <div class="row">
-      <div class="col-xs-12 col-lg-12 col-md-12">
-    <div class="action">
-      <img src="/assets/images/features/icon2_dolphin.png" alt="" height="170" class="icon">
-      <h2 id="stay-up-to-date-with-react"><a class="headingAnchor" href="#stay-up-to-date-with-react"><span></span></a><strong><i>Want to be a pro at building UIs in React?</i></strong></h2>
-      <p>
-        This post is one of many that will explain step-by-step how to create professional UI components in React. If you want to become a pro at building UIs in React, put in your email below and we'll notify you as each post is completed.
-      </p>
-      <div class="form-container">
-        <form action="//ng-newsletter.us6.list-manage.com/subscribe/post?u=86d6f14c7cc955128485e3b8e&amp;id=2877dfe707" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline" target="_blank" novalidate>
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-            <input type="email" class="form-control" name="EMAIL" id="mce-EMAIL" placeholder="Enter email">
-            <input type="hidden" name="FORMID" value="DailyUI-002-a">
-          </div>
-          <input type="checkbox" id="group_1" name="group[9][1]" value="1" class="av-checkbox" checked style="display:none">
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_86d6f14c7cc955128485e3b8e_2877dfe707" tabindex="-1" value=""></div>
-          <button type="submit" id="mc-embedded-subscribe" class="btn btn-success btn-xs" href="">
-            <i class="glyphicon glyphicon-envelope"></i>
-            SEND ME REACT TIPS
-          </button>
-        </form>
-        <div class="help">
-          No spam ever &amp; it's easy to unsubscribe.
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
-
 ## JavaScript Modules
-
-In Jack's CodePen example, all the code for our application is in one file. While this is great for simple applications, as a codebase gets larger, it's important to split the code out into separate files or "modules", for maintainability and readability.  
 
 > ## What is a module?
 >
@@ -107,18 +67,6 @@ The curly braces around the name of the component we are importing indicates tha
 
 {lang=javascript,crop-query=.Workspace}
 &lt;&lt;[](src/components/ImagePreviewArea/ImagePreview.js)
-
-In [our form from the previous post](/react-daily-ui/001-sign-up-form/), we had all of our code in one file. Since our checkout form has significantly more components, we are going to split our code out into several folders and files and use the `import` and `export` keywords we just learned.
-
-Here's a snapshot of our file structure in [the Github repository](https://github.com/fullstackreact/react-daily-ui):
-
-<img src="{{ imagesDir }}/filestructure.png" style="width:inherit"/>
-
-It's helpful to split out components by areas of functionality. Our checkout form has three distinct areas and within those three areas our code is broken down into several components:
-
-<img src="{{ imagesDir }}/002-checkout-component-breakdown.jpg" />
-
-In the upper left-hand corner we have a slider (the purple rectangle) which controls the number of days a user can rent the co-working space. In the main section of our application on the left-hand side (the red rectangle), we have an image and some text describing the space (the two blue rectangles). On the right-hand side (the dark purple rectangle) we have a breakdown of the cost, which we will call the "order summary" (the green rectangle). The data in this section changes when we move the slider in the upper left-hand corner. The right-hand side also has the form where the user submits payment information (the brown rectangle).
 
 Let's take a look at the code for a few of our files:
 
@@ -261,8 +209,8 @@ There are multiple places in our code where we need to display the plural form o
 
 In order to use pluralize we'll need to first install it via `npm`:
 
-> `bash
-> npm install pluralize --save`
+
+> `npm install pluralize --save`
 
 Then we can use the function pluralize provides in our application:
 
@@ -271,46 +219,4 @@ Then we can use the function pluralize provides in our application:
 
 ## Try it out!
 
-Check out the Codepen example:
-
-<iframe height='702' scrolling='no' src='//codepen.io/jackoliver/embed/XKQxvy/?height=702&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/jackoliver/pen/XKQxvy/'>React Daily UI - 002 - Checkout</a> by Jack Oliver (<a href='http://codepen.io/jackoliver'>@jackoliver</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-
-> The complete source for this article is also available [on Github here](https://github.com/fullstackreact/react-daily-ui).
->
-> To start the app, download the code, `cd` into the project directory and type:
->
->        npm install
->        npm start
-
-<div class="newsletter-cta">
-  <div class="row">
-      <div class="col-xs-12 col-lg-12 col-md-12">
-    <div class="action">
-      <img src="/assets/images/features/icon2_dolphin.png" alt="" height="170" class="icon">
-      <h2 id="stay-up-to-date-with-react"><a class="headingAnchor" href="#stay-up-to-date-with-react"><span></span></a><strong><i>Be notified of new posts</i></strong></h2>
-      <p>
-        This post is the first of many that will explain step-by-step how to create professional UI components in React. If you want to become a pro at building UIs in React, put in your email below and we'll notify you as each post is completed.
-      </p>
-      <div class="form-container">
-        <form action="//ng-newsletter.us6.list-manage.com/subscribe/post?u=86d6f14c7cc955128485e3b8e&amp;id=2877dfe707" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline" target="_blank" novalidate>
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-            <input type="email" class="form-control" name="EMAIL" id="mce-EMAIL" placeholder="Enter email">
-            <input type="hidden" name="FORMID" value="DailyUI-002-b">
-          </div>
-          <input type="checkbox" id="group_1" name="group[9][1]" value="1" class="av-checkbox" checked style="display:none">
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_86d6f14c7cc955128485e3b8e_2877dfe707" tabindex="-1" value=""></div>
-          <button type="submit" id="mc-embedded-subscribe" class="btn btn-success btn-xs" href="">
-            <i class="glyphicon glyphicon-envelope"></i>
-            SEND ME REACT TIPS
-          </button>
-        </form>
-        <div class="help">
-          No spam ever &amp; it's easy to unsubscribe.
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
+[DEMO](http://react-checkout.npmstack.com)
