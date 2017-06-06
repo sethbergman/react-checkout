@@ -1,36 +1,3 @@
-* * *
-
-page_id: react-daily-ui-002
-series: react-daily-ui
-permalink: 002-checkout
-title: React Daily UI - 002 Checkout
-description:
-published: false
-authors: [ 'sophia', 'jack' ]
-hero_image: /assets/images/articles/react-daily-ui/002/react-daily-ui-checkout-hero.jpg
-main_image: /assets/images/articles/react-daily-ui/002/react-daily-ui-checkout-hero.jpg
-codeRoot: '**FILE_PATH**'
-imagesDir: '../../../assets/images/series/react-daily-ui/002'
-autotoc: true
-
-## fileMetaKeyHeadingsAllowed: true
-
-> This post is a part of the React Daily UI post series, a joint effort between [Jack Oliver](http://www.jackoliver.info/), [Sophia Shoemaker](https://twitter.com/wisecobbler), and the rest of the team at [Fullstack React](https://www.fullstackreact.com/).
-> Each day we're explaining in detail how to create a UI component with React.
->
-> You can view [the Codepen implementation here](https://codepen.io/jackoliver/pen/qNwrrp)
->
-> Or you view the code [on Github here](https://github.com/fullstackreact/react-daily-ui)
-
-Welcome to React Daily UI, where we go 100 days building 100 beautiful React applications. We're really excited to be partnering with [Jack Oliver](http://www.jackoliver.info/) who is embarking on this ambitious project with us.
-
-Jack is designing and writing the code for these applications and we're going to deconstruct each one to highlight the features that are unique to React.
-
-Today we're going to explore another form, a checkout form:
-
-<iframe height='702' scrolling='no' src='//codepen.io/jackoliver/embed/XKQxvy/?height=702&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/jackoliver/pen/XKQxvy/'>React Daily UI - 002 - Checkout</a> by Jack Oliver (<a href='http://codepen.io/jackoliver'>@jackoliver</a>) on <a href='http://codepen.io'>CodePen</a>.
-</iframe>
-
 ## Overview
 
 The checkout form for this daily UI is similar to [our last form](/react-daily-ui/001-sign-up-form/), but it has a few extra goodies we're going to explore today. Here are the topics we're going to cover:
