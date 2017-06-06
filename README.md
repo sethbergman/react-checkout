@@ -15,6 +15,8 @@ autotoc: true
 
 ## fileMetaKeyHeadingsAllowed: true
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sethbergman/react-checkout.svg)](https://greenkeeper.io/)
+
 > This post is a part of the React Daily UI post series, a joint effort between [Jack Oliver](http://www.jackoliver.info/), [Sophia Shoemaker](https://twitter.com/wisecobbler), and the rest of the team at [Fullstack React](https://www.fullstackreact.com/).
 > Each day we're explaining in detail how to create a UI component with React.
 >
